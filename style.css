@@ -1,0 +1,44 @@
+/* Unnecessary for to move div.... only design purpose*/
+body{
+  background-image: url('./img/body.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+img{
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 #0004;
+  animation:pl2 1.5s infinite linear;
+  position: relative;
+}
+img:before,
+img:after {
+  content:"";
+  position: absolute;
+  inset:0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 0 #0004;
+  animation: inherit;
+  animation-delay: -0.5s;
+}
+img:after {
+  animation-delay: -1s;
+}
+@keyframes pl2 {
+    100% {box-shadow: 0 0 0 40px #0000}
+}
+
+
+
+
+
+/* Necessary For Move Div  */
+#mydiv{
+  top: 30%;
+  left: 40%;
+}
+#mydivheader {
+  cursor: move;
+  z-index: 9;
+}
